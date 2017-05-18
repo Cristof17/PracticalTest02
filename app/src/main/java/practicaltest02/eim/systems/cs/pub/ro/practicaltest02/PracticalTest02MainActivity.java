@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
@@ -137,6 +140,7 @@ public class PracticalTest02MainActivity extends AppCompatActivity implements Vi
         public void run() {
             try {
                 serverSocket = new ServerSocket(PORT);
+                StringBuilder response = null;
                 while (isRunning) {
                     Socket socket = serverSocket.accept();
 
@@ -154,7 +158,7 @@ public class PracticalTest02MainActivity extends AppCompatActivity implements Vi
                     String error = null;
                     try {
                         String webPageAddress = address;
-                        address += "mama";
+                        webPageAddress += "mama";
                         if (webPageAddress == null || webPageAddress.isEmpty()) {
                             error = "Web Page address cannot be empty";
                         }
@@ -172,7 +176,7 @@ public class PracticalTest02MainActivity extends AppCompatActivity implements Vi
                             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
                             int currentLineNumber = 0, numberOfOccurrencies = 0;
                             String currentLineContent;
-                            StringBuilder response = new StringBuilder();
+                            response = new StringBuilder();
                             while ((currentLineContent = bufferedReader.readLine()) != null) {
                                 currentLineNumber++;
                                 response.append(currentLineContent);
@@ -187,6 +191,20 @@ public class PracticalTest02MainActivity extends AppCompatActivity implements Vi
                         if (httpURLConnection != null) {
                             httpURLConnection.disconnect();
                         }
+                    }
+
+                    /*
+                     * Parse the string response
+                     */
+                    try {
+                        JSONObject object = new JSONObject(response.toString());
+                        JSONArray array = object.getJSONArray("RESULTS");
+                        for (int i = 0; i < array.length(); ++i){
+                            JSONObject curr = array.getJSONObject(i);
+                            String name = curr.getString("name");
+                        }
+                    }catch (Exception e){
+                        e.printStackTrace();;
                     }
                     /*
                      * TODO
