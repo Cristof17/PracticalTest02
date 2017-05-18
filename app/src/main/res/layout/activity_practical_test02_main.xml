@@ -32,6 +32,7 @@
         android:layout_height="wrap_content"
         android:text="Stop"
         android:id="@+id/stop_button"
+        android:layout_below="@id/query_button"
         />
 
 </RelativeLayout>

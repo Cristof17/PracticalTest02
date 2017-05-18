@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/cristof/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_6a4df2c12ecd860366d47a208a6b99ea1ca559d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cristof/.android/build-cache/f6223a52f75ed2615d69d3b260811a591c7db622/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/classes_3280544996a18281adb3802a1aa1e4518a859611.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cristof/.android/build-cache/e131fb00a41ce305e227e70027c76c34b619d329/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/classes_f6ef4bb9cebaa62e58b4ccd2e1010d88ff24cdf9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cristof/.android/build-cache/fddff8aceb356e30013f1b0da211c0b07460ca39/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/classes_3a073f7a44a378abf0e09cf8b4beef880ceaed6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cristof/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_85634984dc9d1f37f61f73ff59fdf97a201d9339.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cristof/.android/build-cache/766bda6db5549b2bead14a93ec7ab3443d9ae157/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/classes_1b370f23877f12b6da9e1f4ebac04e696f1cb000.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cristof/.android/build-cache/3b0cb330d1245322aebf82e35f7def04d47f82d2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/classes_791abfd8a69635a1ced4d980c8937e1335c3a8d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cristof/.android/build-cache/2b3689fc6e799ff46de9f8e6b8727e03a2799ffd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/classes_fb0af02baefdde74ad01799751a245afda5a1847.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cristof/.android/build-cache/75f740c09d3abf1fc2907649c4c9e2c627b0e4b8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/classes_7cc6d040169793043f13ab2771e61ca0651444a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cristof/.android/build-cache/3809695fd6a8e5993ba36f93bd5037570a701063/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/classes_eb59819a72918ce70b0fc9d844c10eb71cc94677.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cristof/.android/build-cache/83e7139165cc0bbc8a31e62a12088f1fd27f7355/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/classes_8a0edd5e639522d8088f3bd7269171cd3ba64d19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cristof/.android/build-cache/defcfb382281817c2e2c1d8640cc5f4ffdccb14c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/home/cristof/Documents/EIM/colocviu2/PracticalTest02/app/build/intermediates/pre-dexed/debug/classes_77694f1b42291599d369a0a9f712584cfe5d4fbc.jar" />
+    </item>
+
+</items>
