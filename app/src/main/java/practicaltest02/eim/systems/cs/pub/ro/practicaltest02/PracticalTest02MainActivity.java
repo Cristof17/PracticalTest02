@@ -19,8 +19,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.URL;
+import java.net.URLConnection;
 import java.nio.charset.Charset;
 
 public class PracticalTest02MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -31,6 +35,9 @@ public class PracticalTest02MainActivity extends AppCompatActivity implements Vi
     private static final int PORT = 40000;
     private static boolean isRunning;
     private ServerSocket serverSocket;
+
+    private String address = "http://autocomplete.wunderground.com/aq=?query=";
+    private String query_string;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -142,7 +149,45 @@ public class PracticalTest02MainActivity extends AppCompatActivity implements Vi
                     /* TODO
                      * Make the HTTP Request
                      */
+                    HttpURLConnection httpURLConnection = null;
+                    StringBuilder result = new StringBuilder();
+                    String error = null;
+                    try {
+                        String webPageAddress = address;
+                        address += "mama";
+                        if (webPageAddress == null || webPageAddress.isEmpty()) {
+                            error = "Web Page address cannot be empty";
+                        }
 
+                        URL url = new URL(webPageAddress);
+                        result.append("Protocol: " + url.getProtocol() + "\n");
+                        result.append("Host: " + url.getHost() + "\n");
+                        result.append("Port: " + url.getPort() + "\n");
+                        result.append("File: " + url.getFile() + "\n");
+                        result.append("Reference: " + url.getRef() + "\n");
+                        result.append("==========\n");
+                        URLConnection urlConnection = url.openConnection();
+                        if (urlConnection instanceof HttpURLConnection) {
+                            httpURLConnection = (HttpURLConnection) urlConnection;
+                            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+                            int currentLineNumber = 0, numberOfOccurrencies = 0;
+                            String currentLineContent;
+                            StringBuilder response = new StringBuilder();
+                            while ((currentLineContent = bufferedReader.readLine()) != null) {
+                                currentLineNumber++;
+                                response.append(currentLineContent);
+                            }
+                            result.append("Number of occurrencies: " + numberOfOccurrencies + "\n");
+                        }
+                    } catch (MalformedURLException malformedURLException) {
+                        malformedURLException.printStackTrace();
+                    } catch (IOException ioException) {
+                        ioException.printStackTrace();
+                    } finally {
+                        if (httpURLConnection != null) {
+                            httpURLConnection.disconnect();
+                        }
+                    }
                     /*
                      * TODO
                      * Print the response from the server
